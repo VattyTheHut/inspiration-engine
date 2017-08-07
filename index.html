@@ -1,0 +1,37 @@
+<!doctype html>
+<html ng-app="app">
+  <head>
+    <title>Inspiration Engine</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Anton|Merriweather|Lato:300|Spectral" rel="stylesheet">
+    <!-- freamework stylesheets-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--personal stylesheet-->
+    <link href="style/style.css" rel="stylesheet">
+    <!--personal stylesheet-->
+    <link rel="stylesheet" href="style/footer.css">
+  </head>
+  <body ng-cloak>
+    <ui-view></ui-view>
+  </body>
+
+  <!-- angularjs script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+
+
+  <!-- main script -->
+  <script src="app.js"></script>
+  <script src="mainCtrl.js"></script>
+  <script src="mainServ.js"></script>
+  
+
+
+  <!-- other script -->
+  <script src="./controllers/chatCtrl.js"></script>
+  <script src="./controllers/signUpCtrl.js"></script>
+  <script src="./service/userServ.js"></script>
+  <script src="./service/chatServ.js"></script>
+  <!-- jquary scripts -->
+
+</html>
