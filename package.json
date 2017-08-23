@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/VattyTheHut/inspiration-engine/issues"
   },
-  "homepage": "https://github.com/VattyTheHut/inspiration-engine#readme"
+  "homepage": "https://github.com/VattyTheHut/inspiration-engine#readme",
+  "dependencies": {
+    "materialize-css": "^0.100.1"
+  }
 }

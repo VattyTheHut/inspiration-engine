@@ -1,33 +1,36 @@
-var cb = new Codebird;
-cb.setConsumerKey("TsgYCAP12wyp5BVAUYxc8A0e3", "RTcA3fOgyom0e2eKqffQEuDjVBDdqQ8EnHsljUatJmJoQDhW4i");
-cb.setToken("714728052106924032-GnYmOx0IcrNXFuSywYya0PHbksiEEeH","8s7enrM6lNkbOoNM04q0wU5AlCXnm3m5cKFY30Vk4tdsx");
+$(document).ready(() => {
+     $('.chips').material_chip();
+     $('.chips-initial').material_chip({
+        data: [{
+            tag: 'Apple',
+        }, {
+            tag: 'Microsoft',
+        }, {
+            tag: 'Google',
+        }],
+    });
 
-console.log("the script.js file works as well!!!")
+    $('.chips-placeholder').material_chip({
+        placeholder: 'Enter a tag',
+        secondaryPlaceholder: '+Tag',
+    });
 
+    var chip = {
+        tag: 'chip content',
+        image: '', //optional
+        id: 1, //optional
+    };
 
-var test = ["love quotes for him", "love quotes", "quote sad"];
-var holder = [];
+    $('.chips').on('chip.add', function(e, chip){
+        // you have the added chip here
+    });
 
-var params = {
-    q: 'quotes'
-};
+    $('.chips').on('chip.delete', function(e, chip){
+        // you have the deleted chip here
+     });
 
-function dataCaller(){
-    cb.__call(
-        "search_tweets",
-        params,
-        (reply) => {
-            console.log(reply);
-            holder.push(reply);
-        }
-    );
-}
+    $('.chips').on('chip.select', function(e, chip){
+        // you have the selected chip here
+    });
 
-
-
-for(let i = 0; i < test.length; i++){
-    console.log(test[i])
-    params.q = test[i];
-    dataCaller();
-
-}
+});
