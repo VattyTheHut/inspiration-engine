@@ -2,9 +2,9 @@ $(document).ready(() => {
      $('.chips').material_chip();
      $('.chips-initial').material_chip({
         data: [{
-            tag: 'Apple',
+            tag: 'Quotes',
         }, {
-            tag: 'Microsoft',
+            tag: 'love quotes',
         }, {
             tag: 'Google',
         }],
@@ -20,10 +20,6 @@ $(document).ready(() => {
         image: '', //optional
         id: 1, //optional
     };
-
-    $('.chips').on('chip.add', function(e, chip){
-        // you have the added chip here
-    });
 
     $('.chips').on('chip.delete', function(e, chip){
         // you have the deleted chip here
