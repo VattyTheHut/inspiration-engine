@@ -17,6 +17,13 @@
   },
   "homepage": "https://github.com/VattyTheHut/inspiration-engine#readme",
   "dependencies": {
-    "materialize-css": "^0.100.1"
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.4",
+    "email-templates": "^2.7.1",
+    "express": "^4.15.4",
+    "handlebars": "^4.0.10",
+    "materialize-css": "^0.100.1",
+    "nodemailer": "^4.0.1"
   }
 }
