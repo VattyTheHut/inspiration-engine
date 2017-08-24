@@ -3,17 +3,20 @@ body{
 	padding: 0px;
 }
 
-
-
 /*Contact View  */
 
 .contact-header{
-    text-align: center;
+	text-align: center;
+	background-image: url('http://1.bp.blogspot.com/-HcHiEM11Dcw/TnmBsa4QgqI/AAAAAAAABTU/BaC6u7FigjQ/s1600/MayaA.jpg');
+	background-size: contain;
+	background-attachment: fixed
+	
 }
 
 hr.contact-hr {
 	border-top: 1px solid #8c8b8b;
 	text-align: center;
+	
 }
 hr.contact-hr:after {
 	content: '§';
@@ -46,9 +49,26 @@ hr.contact-hr:after {
 	height: 300px;
 	width: 600px;
 	resize: none;
-
 }
 
 input[name="contact-submit"]{
 	padding: 10px;
 }
+
+/*About */
+
+.about-cont{
+	padding: 15%;
+}
+
+.about-intro{
+	background: #F2F2F2;
+	color: black;
+	padding: 5%;
+	font-size: 18px;
+	line-height: 27px;
+	font-weight: 400;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+

@@ -32,7 +32,7 @@ angular.module('app', ['ui.router'])
   };
 }).directive('endFooter', () =>{
   return {
-    templateUrl: './directive/end-footer.html'
+    templateUrl: './directive/endFooter.html'
   };
   
 });
