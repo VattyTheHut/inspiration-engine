@@ -7,17 +7,19 @@
         <hr class="contact-hr">
     </div>
 
-    <div class="contact-form">
-        <form action="">
+    <div ng-show="!page1" class="contact-form">
+        <form ng-submit="submitContact(fname, lname, email, tel, url, message)">
             <div class="container text-center">
                 <div class="row">
                     <div class="col s6">
-                        <input type="text" 
+                        <input type="text"
+                               ng-model="contact.fname"
                                name="fname" 
                                placeholder="First Name"
                                required/>
                         
-                        <input type="email" 
+                        <input type="email"
+                               ng-model="contact.email" 
                                name="emailadd" 
                                placeholder="Email"
                                required/>
@@ -25,6 +27,7 @@
 
                     <div class="col s6">
                         <input type="text" 
+                               ng-model="contact.lname"
                                name="lname"
                                placeholder="Last Name" 
                                required/>
@@ -32,16 +35,19 @@
                            
                         <input type="tel"  
                                placeholder="Phone Number"
+                               ng-model="contact.tel"
                                required/>
                     </div>
                 </div>
 
                 <input type="url"
+                       ng-model="contact.url"
                        placeholder="Your Web Site http://"/>
 
 
                 <textarea 
-                placeholder="Type your Message Here...." 
+                placeholder="Type your Message Here...."
+                ng-model="contact.message" 
                 tabindex="5" required></textarea>
 
 
@@ -61,9 +67,19 @@
                     type="submit" 
                     id="contact-submit" 
                     data-submit="...Sending"
+                    ng-click="changeView()"
                     value="Submit" 
                     />
             </div>
         </form>
     </div>
+
+
+
+     <div ng-show="page2" class="text-center">
+        <div class="contact-intro">
+            <h2>Your Contact Sent</h2>
+            <h3>Thank You!</h3>
+        </div>
+    </div> 
 </div>

@@ -44,10 +44,10 @@ hr.contact-hr:after {
 	text-align: center;
 }
 
-
 .contact-form textarea{
-	height: 300px;
-	width: 600px;
+	height: 20vh;
+	width: 100%;
+	position: relative;
 	resize: none;
 }
 
@@ -70,5 +70,16 @@ input[name="contact-submit"]{
 	font-weight: 400;
 	margin-left: 15%;
 	margin-right: 15%;
+}
+
+.contact-intro{
+	background: #F2F2F2;
+	color: black;
+	padding: 5%;
+	font-size: 18px;
+	line-height: 27px;
+	font-weight: 400;
+	position: relative;
+	margin: 15%;
 }
 

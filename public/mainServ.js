@@ -23,4 +23,9 @@ angular.module('app').service('mainServ', function($http){
             }
         );
     }
+
+
+    this.sendContact = data => {
+        return $http.post('/postContact', data);
+    }
 })

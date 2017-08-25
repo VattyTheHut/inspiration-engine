@@ -16,7 +16,7 @@ angular.module('app', ['ui.router'])
         .state('contact', {
             url: '/contact',
             templateUrl: 'views/contact.html',
-            controller: 'mainCtrl'
+            controller: 'contactCtrl'
         })
     
         // ABOUT PAGE AND MULTIPLE NAMED VIEWS =================================
