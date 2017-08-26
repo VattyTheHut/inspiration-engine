@@ -12,6 +12,5 @@ angular.module('app').controller('contactCtrl', function($scope, mainServ){
       $scope.page2 = true
       $scope.page1 = true
     }
-
    
 })

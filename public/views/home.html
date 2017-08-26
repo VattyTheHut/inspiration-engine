@@ -1,8 +1,10 @@
 
+<main-nav></main-Nav>
 
-<form ng-submit="submit()">
-    <div class="chips"></div>
-    Enter text and hit enter:
-    <input type="text" ng-model="goo" name="text"/>
-    <input type="submit" id="submit" value="search" />
-</form> 
+<div id="home-intro" class="search-container text-center">
+    <div>Inspirational Engine</div>
+    <form ng-submit="submit()" id="search">
+        <input name="q" ng-model="goo" type="text" size="40" placeholder="Search..." />
+    </form>
+</div>
+
