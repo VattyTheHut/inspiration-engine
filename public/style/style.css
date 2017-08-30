@@ -44,7 +44,7 @@ body{
 
 }
 #search input[type="text"] {
-    background: url(search-white.png) no-repeat 10px 6px #444;
+    background: url() no-repeat 10px 6px #444;
     border: 0 none;
     font: bold 12px Arial,Helvetica,Sans-serif;
     color: #d7d7d7;
@@ -64,7 +64,7 @@ body{
     }
 
 #search input[type="text"]:focus {
-    background: url(search-dark.png) no-repeat 10px 6px #fcfcfc;
+    background: url() no-repeat 10px 6px #fcfcfc;
     color: #6a6f75;
     width: 200px;
     -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
@@ -73,10 +73,48 @@ body{
     text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
 	}
 
-	.start-search{
-		
+	#query-bar ul {
+    	list-style-type: none;
+    	margin: 3%;
+    	padding: 5%;
+		overflow: hidden;
+		background-color: transparent;
 	}
 
+	#query-bar ul li {
+		float: left;
+		color: wheat;
+		margin: 2%;
+		padding: 6%;
+		height: 25px;
+		width: 25px;
+		text-align: left;
+		border-radius: 10%;
+		background-color: #ee6e73;
+		font-size: 15px;
+	}
+
+	#query-bar ul li a:hover {
+    	background-color: #e26165;
+	}
+
+	.search-animate{
+		animation-name: search;
+		animation-duration: 2s;
+
+	}
+
+	/* Safari 4.0 - 8.0 */
+	@-webkit-keyframes search {
+    	from {opacity: 0;}
+    	to {opacity: 1;}
+	} 
+
+	/* Standard syntax */ 
+	@keyframes search {
+    	from {opacity: 0;}
+    	to {opacity: 1;}
+	}
 
 /*Home  */
 

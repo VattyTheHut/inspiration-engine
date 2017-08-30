@@ -1,8 +1,17 @@
 
 <main-nav></main-Nav>
 
+    
+<div id="query-bar" ng-show="showChips">
+    <ul>
+        <li ng-repeat=" chip in chips" ng-bind-html-unsafe="opt.text" >
+            <div ng-click="killChip(chip)">{{ chip.text }}</div>
+        </li>
+    </ul>
+</div> 
+
 <div id="home-intro" class="search-container text-center">
-    <div>Inspirational Engine</div>
+    <div ng-show="!noLogo">Inspirational Engine</div>
     <form ng-submit="submit()" id="search">
         <input name="q" ng-model="goo" type="text" size="40" placeholder="Search..." />
     </form>
