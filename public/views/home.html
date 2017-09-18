@@ -4,7 +4,7 @@
     
 <div id="query-bar" ng-show="showChips">
     <ul>
-        <li ng-click="killChip(chip)" ng-repeat=" chip in chips" ng-bind-html-unsafe="opt.text" >
+        <li ng-click="killChip(chip)" ng-repeat=" chip in chips track by $index" ng-bind-html-unsafe="opt.text" >
             {{ chip.text }}
         </li>
     </ul>
@@ -19,27 +19,33 @@
 
 
 <div class="word-container">
-    <div class="test">
-        <h1><a href="#">Test</a></h1>
+    <!-- <div class="grid-x-1">
+        <div class="test">#bitches be crazy</div>
+            <div class="grid-y-1">
+                <div class="test2">i love BBC #black don't crack</div>
+            </div>
     </div>
 
-    <div class="test2">
-        <h1><a href="#">Test</a></h1>
+    <div class="grid-x-2">
+         <div class="test">how do you tewwet?</div>
+            <div class="grid-y-2">
+            <div class="test">#same-geys adnj</div>
+            </div>
     </div>
 
-    <div class="test">
-        <h1><a href="#">Test</a></h1>
-    </div>
+    <div class="grid-x-3">
+         <div class="test">#foodie i live pancake @bigboobies</div>
+            <div class="grid-y-3">
+            <div class="test2">#fuck12 bluelievesmatteraidk</div>
+            </div>
+    </div>  -->
 
-    <div class="test2">
-        <h1><a href="#">Test</a></h1>
-    </div>
 
-    <div class="test">
-        <h1><a href="#">Test</a></h1>
-    </div>
-
-    <div class="test2">
-        <h1><a href="#">Test</a></h1>
+    <div>
+        <div ng-repeat="quote in quotes">
+            <div ng-class="{'gridX1': randomGrid() == 1, 'gridY1': randomGrid() == 2, 'gridX2': randomGrid() == 3, 'gridY2': randomGrid() == 4, 'gridX3': randomGrid() == 5, 'gridY3': randomGrid() == 6}" ng-repeat="statuses in quote.reply.statuses">
+                {{statuses.text}}
+             </div>
+        </div>
     </div>
 </div>

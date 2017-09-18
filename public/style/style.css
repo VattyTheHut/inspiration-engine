@@ -3,9 +3,11 @@ body{
 	padding: 0px;
 }
 
+
+
 /*Home  */
 .search-container{
-	height: 70vh
+	height: 50vh
 }
 
 .search-container form{
@@ -39,10 +41,6 @@ body{
     to {opacity: 1;}
 }
 
-
-#search {
-
-}
 #search input[type="text"] {
     background: url() no-repeat 10px 6px #444;
     border: 0 none;
@@ -98,29 +96,63 @@ body{
 
 
 	.word-container{
-		height: 20vh;
-		width: 100%;
-
+		height: 300px;
+	
 	}
+	.gridX1{
+		background-color: olive;
+		height: 30%;
+		position: relative;
+	}
+	.gridX2{
+		background-color: palegreen;
+		height: 30%;
+		position: relative;
+	}
+	.gridX3{
+		background-color: firebrick;
+		height: 30%;
+		position: relative;
+	}
+
+	.gridY1{
+		background-color: wheat;
+		width: 50%;
+		height: 60%;
+		float: right;
+		position: relative;
+	}
+	.gridY2{
+		background-color: orange;
+		width: 30%;
+		height: 60%;
+		float: right;
+		position: relative;
+	}
+	.gridY3{
+		background-color: bisque;
+		width: 50%;
+		height: 70%;
+		position: relative;	
+	}
+
+
 
 	.test{
-		opacity: 0;
 		animation-name: logo-fade;
-		animation-duration: 6s;
-		-webkit-animation-iteration-count: 3; /* Safari 4.0 - 8.0 */
-    	animation-iteration-count: infinite;
 		animation-timing-function: ease-in-out;
-		-webkit-animation-timing-function: ease-in-out;
+		animation-duration: 3s;
+		animation-iteration-count: infinite;
 	}
 
+
 	.test2{
-		opacity: 0;
-		animation-name: logo-fade2;
-		animation-duration: 6s;
-		-webkit-animation-iteration-count: 3; /* Safari 4.0 - 8.0 */
-    	animation-iteration-count: infinite;
+
+		animation-name: logo-fade;
 		animation-timing-function: ease-in-out;
-		-webkit-animation-timing-function: ease-in-out;
+		animation-duration: 2s;
+		animation-iteration-count: infinite;
+		
 	}
 
 
@@ -131,9 +163,7 @@ body{
 		height: 0px; 	
 		opacity: 0;
 		transform: translateY(100px);
-		
 	}
-
 
 	50%{
 		width: 0px; 
@@ -201,15 +231,6 @@ body{
     	from {opacity: 0;}
     	to {opacity: 1;}
 	}
-
-
-
-
-
-
-
-
-
 
 /*Home  */
 

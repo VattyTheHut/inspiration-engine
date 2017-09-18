@@ -18,10 +18,13 @@ angular.module('app').service('mainServ', function($http){
             "search_tweets",
             params,
             (reply) => {
-                console.log(reply);
-                holder.push(reply);
+                holder.push({reply});
             }
         );
+    }
+
+    this.moveholder = () => {
+        return holder;
     }
 
 
