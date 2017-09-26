@@ -43,8 +43,8 @@
 
     <div>
         <div ng-repeat="quote in quotes">
-            <div ng-class="{'gridX1': randomGrid() == 1, 'gridY1': randomGrid() == 2, 'gridX2': randomGrid() == 3, 'gridY2': randomGrid() == 4, 'gridX3': randomGrid() == 5, 'gridY3': randomGrid() == 6}" ng-repeat="statuses in quote.reply.statuses">
-                {{statuses.text}}
+            <div ng-model="randomeClass.GetRandomGrid" ng-class="randomeClass.GetRandomGrid" ng-repeat="statuses in quote.reply.statuses">
+                <div ng-model="randomeClass.GetRandomAni" ng-class="randomeClass.GetRandomAni">{{statuses.text}}</div>
              </div>
         </div>
     </div>

@@ -43,13 +43,34 @@ angular.module('app').controller('mainCtrl', function($scope, mainServ){
 
     
     // $scope.randomStyle = randomStyle();
-    $scope.randomGrid = () => {
-        var min = 0;
-        var max = 7;
-        console.log("is happing")
-        console.log(Math.floor(Math.random() * (max - min + 1)) + min)
-        return Math.floor(Math.random() * (max - min + 1)) + min;
+    function randomGrid(){
+        console.log("gridX1")
+        // const grid = ["gridX1", "gridX2", "gridX3", "gridY1", "gridY2", "gridY3"];
+        // let min = 0;
+        // let max = grid.length;
+        // console.log("randomGrid happing")
+        // console.log(Math.floor(Math.random() * (max - min + 1)) + min)
+        // return grid[Math.floor(Math.random() * (max - min + 1)) + min];
+        return "gridX1";
     };
+
+
+    function randomAni(){
+        console.log("test")
+        // const ani = ["test1", "test2"];
+        // let min = 0;
+        // let max = ani.length;
+        // console.log("randomClass happing")
+        // console.log(Math.floor(Math.random() * (max - min + 1)) + min)
+        // return ani[Math.floor(Math.random() * (max - min + 1)) + min];
+        return "test";
+    };
+
+
+    var randomeClass = {
+        getRandomAni: randomAni(),
+        getRandomGrid: randomGrid() 
+    }
 
     $scope.submit = () => {
         if($scope.goo){
